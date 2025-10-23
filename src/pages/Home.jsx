@@ -2,7 +2,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-
+import { FaCalendarAlt, FaChalkboardTeacher } from "react-icons/fa";
+  import { FaSearch, FaSignInAlt, FaCalendarCheck } from "react-icons/fa";
+import { FaStar, FaUserTie } from "react-icons/fa";
 import { useLoaderData } from "react-router";
 import SkillCard from "../components/SkillCard";
 
@@ -71,31 +73,71 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-8" data-aos="fade-up">
-        <h2 className="text-xl font-bold text-secondary">How It Works</h2>
-        <ol className="list-decimal ml-6">
-          <li>Browse skills</li>
-          <li>Login to view details</li>
-          <li>Book a session</li>
-        </ol>
-      </section>
+   
+<section className="mt-8" data-aos="fade-up">
+  <h2 className="text-xl font-bold text-secondary mb-4">How It Works</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {[
+      { icon: <FaSearch />, title: "Browse Skills", desc: "Explore local skill listings by category." },
+      { icon: <FaSignInAlt />, title: "Login to View", desc: "Sign in to access full skill info." },
+      { icon: <FaCalendarCheck />, title: "Book Session", desc: "Submit your name and email to book." },
+    ].map((item, i) => (
+      <div key={i} className="bg-white border border-cyan-300 rounded-lg p-4 shadow-md hover:shadow-xl transition">
+        <div className="text-3xl text-secondary mb-2">{item.icon}</div>
+        <h3 className="text-lg font-bold text-cyan-600">{item.title}</h3>
+        <p className="text-sm text-gray-600">{item.desc}</p>
+      </div>
+    ))}
+  </div>
+</section>
 
-      <section className="mt-8 text-bold" data-aos="fade-up">
-        <h2 className="text-xl font-bold text-secondary">Top Rated Providers</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-secondary font-semibold">
-          <div className=" p-4 rounded outline-4 outline-cyan-400 shadow-2xl ">Alex Martin — Guitar — ⭐ 4.8</div>
-          <div className=" p-4 rounded  outline-4 outline-cyan-400 shadow-2xl">Rafi Khan — Web Dev — ⭐ 4.9</div>
-          <div className="p-4 rounded  outline-4 outline-cyan-400 shadow-2xl">Maya Roy — Yoga — ⭐ 4.7</div>
-        </div>
-      </section>
 
-      <section className="mt-8" data-aos="fade-up">
-        <h2 className="text-xl font-bold text-secondary">Upcoming Local Workshops</h2>
-        <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-4 text-secondary font-semibold">
-          <div className=" p-4 rounded outline-4 outline-cyan-400 shadow-2xl">Guitar Workshop — Oct 27 — Alex Martin</div>
-          <div className=" p-4 rounded outline-4 outline-cyan-400 shadow-2xl">HTML Basics — Nov 3 — Rafi Khan</div>
+<section className="mt-8" data-aos="fade-up">
+  <h2 className="text-xl font-bold text-secondary mb-4">Top Rated Providers</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {[
+      { name: "Alex Martin", skill: "Guitar", rating: 4.8 },
+      { name: "Rafi Khan", skill: "Web Dev", rating: 4.9 },
+      { name: "Maya Roy", skill: "Yoga", rating: 4.7 },
+    ].map((p, i) => (
+      <div key={i} className="bg-white border border-cyan-300 rounded-lg p-4 shadow-md hover:shadow-xl transition">
+        <div className="flex items-center gap-2 text-secondary mb-2">
+          <FaUserTie />
+          <h3 className="text-lg font-bold">{p.name}</h3>
         </div>
-      </section>
+        <p className="text-sm text-gray-600">Skill: {p.skill}</p>
+        <p className="text-sm text-yellow-500 flex items-center gap-1">
+          <FaStar /> {p.rating}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+
+
+<section className="mt-8" data-aos="fade-up">
+  <h2 className="text-xl font-bold text-secondary mb-4">Upcoming Local Workshops</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {[
+      { title: "Guitar Workshop", date: "Oct 27", host: "Alex Martin" },
+      { title: "HTML Basics", date: "Nov 3", host: "Rafi Khan" },
+    ].map((w, i) => (
+      <div key={i} className="bg-white border border-cyan-300 rounded-lg p-4 shadow-md hover:shadow-xl transition">
+        <h3 className="text-lg font-bold text-cyan-600 mb-1">{w.title}</h3>
+        <p className="text-sm text-gray-600 flex items-center gap-2">
+          <FaCalendarAlt /> {w.date}
+        </p>
+        <p className="text-sm text-gray-600 flex items-center gap-2">
+          <FaChalkboardTeacher /> {w.host}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
+
     </div>
   );
 }

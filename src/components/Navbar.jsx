@@ -38,7 +38,7 @@ export default function Navbar() {
             <div>  <ImProfile className="text-gray-500" /> </div>
             <div><NavLink to="/profile" className={({ isActive }) =>
               isActive ? "text-blue-600 font-bold underline text-sm" : "text-sm"
-            }></NavLink>My Profile</div>
+            }>My Profile</NavLink></div>
 
           </div>
 
