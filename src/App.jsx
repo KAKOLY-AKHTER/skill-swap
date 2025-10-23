@@ -4,7 +4,8 @@ import { RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import router from "./routes/router"; 
+import router from "./routes/Router";
+
 
 export default function App() {
   useEffect(() => {
