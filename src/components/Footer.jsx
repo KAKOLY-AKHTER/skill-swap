@@ -18,6 +18,17 @@ export default function Footer() {
               <li><a href="/contact" className="hover:underline">Contact Support</a></li>
             </ul>
           </div>
+
+
+          <div className="md:mb-0 mb-7">
+      <h3 className="font-semibold mb-2 text-lg">Contact Info</h3>
+      <ul className="space-y-1 list-none text-gray-300">
+        <li>Email: <a href="mailto:support@skillswap.com" className="hover:underline">support@skillswap.com</a></li>
+        <li>Phone: <a href="tel:+8801234567890" className="hover:underline">+880 1234 567890</a></li>
+        <li>Location: Khilgaon, Dhaka, Bangladesh</li>
+      </ul>
+    </div>
+
         
         <div className=" gap-3 mt-2 text-xl space-y-3">
           <div className="flex items-center gap-2">
