@@ -18,8 +18,8 @@ export default function Home() {
 
       <section className="mb-6 flex flex-col md:flex-row items-center justify-between bg-white p-6 rounded-lg shadow-md">
         <div className="w-full md:w-1/2 text-center md:text-left mt-6 md:mt-0">
-          <h2 className="text-xl md:text-4xl font-bold"><span className="font-bold text-7xl text-secondary">Learn & </span><br />
-            <span className="font-bold text-7xl text-cyan-400">Share Skills</span></h2>
+          <h2 className="font-bold"><span className="font-bold text-4xl md:text-7xl text-secondary">Learn & </span><br />
+            <span className="font-bold text-4xl md:text-7xl text-cyan-400">Share Skills</span></h2>
           <Swiper
             modules={[Autoplay]}
             autoplay={{ delay: 3000 }}
