@@ -1,0 +1,148 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Acoustic guitar classes for complete beginners.",
+    "image": "https://northvilleguitarlessons.com/wp-content/uploads/2020/11/WhyBeginnerGuitarLessons.jpg",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions for non-native speakers.",
+    "image": "https://storage.googleapis.com/schoolnet-content/blog/wp-content/uploads/2021/12/How-to-Improve-your-spoken-English-1-1.jpg",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Intro to Web Development",
+    "providerName": "Rafi Khan",
+    "providerEmail": "rafi@skillswap.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "HTML, CSS and basic JS for beginners.",
+    "image": "https://cdn.slidesharecdn.com/ss_thumbnails/introtowebdevelopment-200724053238-thumbnail.jpg?width=640&height=640&fit=bounds",
+    "category": "Coding"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Yoga for Beginners",
+    "providerName": "Maya Roy",
+    "providerEmail": "maya@skillswap.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 6,
+    "description": "Simple yoga routines for health and flexibility.",
+    "image": "https://oneyogathailand.com/wp-content/uploads/2020/07/First-Steps-into-Yoga-%E2%80%93-Beginner-Series.jpg",
+    "category": "Wellness"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Portrait Photography Basics",
+    "providerName": "Nayeem Ahmed",
+    "providerEmail": "nayeem@skillswap.com",
+    "price": 30,
+    "rating": 4.5,
+    "slotsAvailable": 2,
+    "description": "Learn camera settings and posing for portraits.",
+    "image": "https://media.greatbigphotographyworld.com/wp-content/uploads/2023/03/outdoor-portrait.jpg",
+    "category": "Photography"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Basic Bengali Typing",
+    "providerName": "Kakoli Akhter",
+    "providerEmail": "kakoly@skillswap.com",
+    "price": 8,
+    "rating": 4.4,
+    "slotsAvailable": 10,
+    "description": "Learn fast Bengali typing with practice exercises.",
+    "image": "https://pressxpress.org/wp-content/uploads/2023/02/Evolution-of-Bangla-typing-1024x435.jpg",
+    "category": "Language"
+  },
+    {
+    "skillId": 7,
+    "skillName": "Creative Writing Workshop",
+    "providerName": "Farhana Sultana",
+    "providerEmail": "farhana@skillswap.com",
+    "price": 18,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Learn storytelling, poetry, and expressive writing techniques.",
+    "image": "https://thumbs.dreamstime.com/b/typewriter-pensil-glasses-paper-wooden-background-creative-writing-journalism-concept-retro-filtered-image-literature-179194594.jpg",
+    "category": "Writing"
+  },
+  {
+    "skillId": 8,
+    "skillName": "Basic Graphic Design",
+    "providerName": "Tanvir Rahman",
+    "providerEmail": "tanvir@skillswap.com",
+    "price": 22,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Introduction to Canva, Photoshop, and design principles.",
+    "image": "https://t4.ftcdn.net/jpg/01/45/77/45/360_F_145774524_G35kjiqkhRjmeJIUgHkmpoB5qFiW7AuD.jpg",
+    "category": "Design"
+  },
+  {
+    "skillId": 9,
+    "skillName": "Public Speaking Confidence",
+    "providerName": "Shamim Hasan",
+    "providerEmail": "shamim@skillswap.com",
+    "price": 12,
+    "rating": 4.5,
+    "slotsAvailable": 6,
+    "description": "Overcome stage fear and speak with clarity and impact.",
+    "image": "https://www.sketchbubble.com/blog/wp-content/uploads/2019/09/confidence-in-public-speaking-1.jpg",
+    "category": "Communication"
+  },
+  {
+    "skillId": 10,
+    "skillName": "Basic Excel for Beginners",
+    "providerName": "Ruma Chowdhury",
+    "providerEmail": "ruma@skillswap.com",
+    "price": 14,
+    "rating": 4.6,
+    "slotsAvailable": 7,
+    "description": "Learn formulas, charts, and data entry in Excel.",
+    "image": "https://thumbs.dreamstime.com/b/microsoft-excel-logo-vector-format-available-ai-microsoft-excel-logo-131096532.jpg",
+    "category": "Productivity"
+  },
+  {
+    "skillId": 11,
+    "skillName": "Cooking Bangladeshi Dishes",
+    "providerName": "Nasima Begum",
+    "providerEmail": "nasima@skillswap.com",
+    "price": 16,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Learn to cook biryani, bhuna, and traditional sweets.",
+    "image": "https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/sumif.jpg?width=650&height=412&name=sumif.jpg",
+    "category": "Cooking"
+  },
+  {
+    "skillId": 12,
+    "skillName": "Mobile Photography Tricks",
+    "providerName": "Rashedul Islam",
+    "providerEmail": "rashed@skillswap.com",
+    "price": 10,
+    "rating": 4.4,
+    "slotsAvailable": 8,
+    "description": "Capture stunning photos using your smartphone.",
+    "image": "https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/1526403083254-GUWT7GETYAFO156JR9MQ/The+Common+Wanderer_-11.jpg",
+    "category": "Photography"
+  }
+
+
+]
