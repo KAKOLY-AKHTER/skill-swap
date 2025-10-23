@@ -18,7 +18,7 @@ export default function Profile() {
   };
 
   return (
-    <div className="container mx-auto p-6 max-w-md">
+    <div className="container mx-auto p-6 py-40 md:py-30 max-w-md">
       <h2 className="text-2xl font-bold mb-4">My Profile</h2>
       <div className="mb-4">
         <img src={user?.photoURL || "https://via.placeholder.com/120"} alt="avatar" className="w-28 h-28 rounded-full" />
