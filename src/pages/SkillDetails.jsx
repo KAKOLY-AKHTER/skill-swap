@@ -20,7 +20,7 @@ export default function SkillDetails() {
   if (!skill) return <div className="p-6">Skill not found</div>;
 
   return (
-    <div className="container mx-auto max-w-10/12 py-30">
+    <div className="container mx-auto max-w-10/12 md:py-30 py-60">
       <div className="grid md:grid-cols-2 gap-6">
         <div className="text-blue-500">
           <img src={skill.image} alt={skill.skillName} className="w-full h-64 object-cover rounded" />

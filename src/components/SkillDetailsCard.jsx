@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function SkillDetailsCard({ skill }) {
   if (!skill) return <div className="p-6">Skill not found</div>;
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 md:py-30 py-60 ">
       <img className="w-full h-[350px] object-cover rounded" src={skill.image} alt={skill.skillName} />
       <h2 className="text-2xl font-semibold">{skill.skillName}</h2>
       <p>{skill.description}</p>

@@ -25,7 +25,7 @@ export default function ForgotPassword() {
   };
 
   return (
-    <div className="container mx-auto p-6 max-w-md py-30">
+    <div className="container mx-auto p-6 max-w-md md:py-30 py-60">
       <h2 className="text-2xl font-bold mb-4">Reset Password</h2>
       <form onSubmit={handleReset} className="space-y-3">
         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email" className="input input-bordered w-full" required />
