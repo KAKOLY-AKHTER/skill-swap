@@ -48,7 +48,7 @@ export default function Login() {
                    onChange={(e) => setPassword(e.target.value)}
                    placeholder="Password"
                    type={show ? "text" : "password"}
-                   className="input input-bordered w-full pr-10" // extra padding right for icon space
+                   className="input input-bordered w-full pr-10"
                    required
                  />
                  <button

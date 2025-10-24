@@ -5,9 +5,6 @@ import { AuthContext } from "../context/AuthContext";
 import { FaEye, FaRegEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
-// function validatePassword(pw) {
-//   return pw.length >= 6 && /[A-Z]/.test(pw) && /[a-z]/.test(pw);
-// }
 
 export default function SignUp() {
   const { registerWithEmail, signInWithGoogle, updateUserProfile } = useContext(AuthContext);
@@ -48,18 +45,14 @@ export default function SignUp() {
         <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" className="input input-bordered w-full" />
         <input value={photo} onChange={(e) => setPhoto(e.target.value)} placeholder="Photo URL" className="input input-bordered w-full" />
         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email" className="input input-bordered w-full" required />
-        {/* <div>
-          <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" type={show ? "text" : "password"}
-            className="input input-bordered w-full" required />
-          <button type="button" onClick={() => setShow((s) => !s)} className="ml-2 text-sm">{show ?<FaEye />  :  <FaRegEyeSlash />}</button>
-        </div> */}
+       
         <div className="relative">
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
             type={show ? "text" : "password"}
-            className="input input-bordered w-full pr-10" // extra padding right for icon space
+            className="input input-bordered w-full pr-10"
             required
           />
           <button

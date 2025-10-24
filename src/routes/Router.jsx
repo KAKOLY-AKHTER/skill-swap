@@ -1,4 +1,4 @@
-// src/router.js
+
 import { createBrowserRouter } from "react-router-dom";
 import PrivateRoute from "../context/PrivateRoute";
 import HomeLayout from "../layouts/HomeLayout";
