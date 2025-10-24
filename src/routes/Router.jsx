@@ -8,6 +8,7 @@ import SignUp from "../pages/SignUp";
 import ForgotPassword from "../pages/ForgetPassword";
 import SkillDetails from "../pages/SkillDetails";
 import Profile from "../pages/Profile";
+import Loading from "../components/Loading";
 
 
 const router = createBrowserRouter([
@@ -29,10 +30,9 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
           <SkillDetails></SkillDetails>
-          </PrivateRoute>
-
-        ),
-         loader : ()=>fetch("/skills.json")
+          </PrivateRoute> ),
+         loader : ()=>fetch("/skills.json"),
+         hydrateFallbackElement:<Loading></Loading>
       },
       {
         path: "profile",
