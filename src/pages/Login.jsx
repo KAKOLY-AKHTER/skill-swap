@@ -38,7 +38,7 @@ export default function Login() {
   };
 
   return (
-    <div className="container mx-auto p-6 max-w-md md:py-30 py-50 text-blue-500">
+    <div className="container mx-auto p-6 max-w-md md:py-30 py-70 text-blue-500">
       <h2 className="text-2xl font-bold mb-4 text-secondary">Login</h2>
       <form onSubmit={handleSubmit} className="space-y-3 border-2 p-5 rounded-xl shadow-2xl">
         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email" className="input input-bordered w-full" required />

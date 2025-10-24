@@ -16,7 +16,7 @@ export default function AllSkill() {
   }
 
   return (
-    <div className="container mx-auto max-w-screen-xl px-4 md:py-30 py-40 ">
+    <div className="container mx-auto max-w-screen-xl md:py-30 py-70 px-4 ">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl font-bold text-secondary">All Skills(<span className="text-cyan-400">{skills.length}</span>)</h2>
         <Link to="/" className="btn btn-outline bg-cyan-200 text-blue-800">Go to Home</Link>
