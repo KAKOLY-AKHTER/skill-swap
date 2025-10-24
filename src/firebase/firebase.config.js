@@ -3,12 +3,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCrr9Gs6Lqs9TkNvP5HVhe8k-wIHHnWeM4",
-  authDomain: "skills-swap-189eb.firebaseapp.com",
-  projectId: "skills-swap-189eb",
-  storageBucket: "skills-swap-189eb.firebasestorage.app",
-  messagingSenderId: "408153106361",
-  appId: "1:408153106361:web:f79f4ee7819af529b33868"
+ apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+
 };
 
 const app = initializeApp(firebaseConfig);
