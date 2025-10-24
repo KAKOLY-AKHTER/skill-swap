@@ -32,19 +32,19 @@ export default function Footer() {
         
         <div className=" gap-3 mt-2 text-xl space-y-3">
           <div className="flex items-center gap-2">
-            <a href=""><FaFacebook className="text-blue-600" /></a>
+            <a href="https://www.facebook.com"><FaFacebook className="text-blue-600" /></a>
             <h1 className="text-sm">Facebook</h1>
 
 
           </div>
           <div className="flex items-center gap-2">
-            <a href=""><FaInstagram className="text-pink-600" /></a>
+            <a href="https://www.instagram.com"><FaInstagram className="text-pink-600" /></a>
             <h1 className="text-sm">Instagram</h1>
 
 
           </div>
           <div className="flex items-center gap-2" >
-            <a href=""><FaLinkedin className="text-gray-600" /></a>
+            <a href="https://www.linkedin.com"><FaLinkedin className="text-gray-600" /></a>
             <h1 className="text-sm">Linkedin</h1>
 
 

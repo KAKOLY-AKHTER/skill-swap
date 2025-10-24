@@ -25,18 +25,41 @@ export default function SignUp() {
 
 
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   if (!validatePassword(password)) return toast.error("Password must be >=6 with upper & lower case");
+  //   try {
+  //     await registerWithEmail(email, password);
+  //     if (name || photo) await updateUserProfile({ displayName: name, photoURL: photo });
+  //     toast.success("Account created");
+  //     navigate("/");
+  //   } catch (err) {
+  //     toast.error(err.message);
+  //   }
+  // };
+
+
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!validatePassword(password)) return toast.error("Password must be >=6 with upper & lower case");
-    try {
-      await registerWithEmail(email, password);
-      if (name || photo) await updateUserProfile({ displayName: name, photoURL: photo });
-      toast.success("Account created");
-      navigate("/");
-    } catch (err) {
-      toast.error(err.message);
+  e.preventDefault();
+
+  const errors = validatePassword(password);
+  if (errors.length > 0) {
+    toast.error(errors.join(", "));
+    return;
+  }
+
+  try {
+    await registerWithEmail(email, password);
+    if (name || photo) {
+      await updateUserProfile({ displayName: name, photoURL: photo });
     }
-  };
+    toast.success("Account created");
+    navigate("/");
+  } catch (err) {
+    toast.error(err.message);
+  }
+};
+
 
   return (
     <div className="container mx-auto p-6 max-w-md md:py-30 py-50 ">
