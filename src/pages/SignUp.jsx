@@ -24,21 +24,6 @@ export default function SignUp() {
   };
 
 
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   if (!validatePassword(password)) return toast.error("Password must be >=6 with upper & lower case");
-  //   try {
-  //     await registerWithEmail(email, password);
-  //     if (name || photo) await updateUserProfile({ displayName: name, photoURL: photo });
-  //     toast.success("Account created");
-  //     navigate("/");
-  //   } catch (err) {
-  //     toast.error(err.message);
-  //   }
-  // };
-
-
   const handleSubmit = async (e) => {
   e.preventDefault();
 
