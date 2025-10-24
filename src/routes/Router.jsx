@@ -17,7 +17,8 @@ const router = createBrowserRouter([
     element:<HomeLayout></HomeLayout>,
     children: [
       { index: true, element: <Home></Home> ,
-        loader : ()=>fetch("/skills.json")
+        loader : ()=>fetch("/skills.json"),
+       hydrateFallbackElement:<Loading></Loading>
        }
     
       ,
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
           <SkillDetails></SkillDetails>
           </PrivateRoute> ),
          loader : ()=>fetch("/skills.json"),
-         hydrateFallbackElement:<Loading></Loading>
+         
       },
       {
         path: "profile",
