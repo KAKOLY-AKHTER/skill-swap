@@ -8,6 +8,7 @@ export default function ForgotPassword() {
   const location = useLocation();
   const prefill = location.state?.email || "";
   const [email, setEmail] = useState(prefill);
+  const [showGmailLink, setShowGmailLink] = useState(false);
 
   useEffect(() => {
     if (prefill) setEmail(prefill);
@@ -18,7 +19,8 @@ export default function ForgotPassword() {
     try {
       await resetPassword(email);
       toast.success("Reset email sent. Opening Gmail...");
-      window.open("https://mail.google.com/mail/u/0/#inbox", "_blank");
+       setShowGmailLink(true);
+
     } catch (err) {
       toast.error(err.message);
     }
@@ -31,6 +33,17 @@ export default function ForgotPassword() {
         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email" className="input input-bordered w-full" required />
         <button type="submit" className="btn btn-primary">Send Reset Email</button>
       </form>
+      {showGmailLink && (
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-secondary mt-4 block text-center"
+        >
+          Open Gmail
+        </a>
+      )}
+
     </div>
   );
 }
