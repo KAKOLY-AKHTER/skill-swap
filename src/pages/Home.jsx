@@ -12,7 +12,7 @@ import SkillCard from "../components/SkillCard";
 
 export default function Home() {
   const skills = useLoaderData()
-  const popular = skills.slice(0, 6);
+  const popular = skills.slice(0, 8);
   return (
     <div className="container mx-auto mt-10  max-w-screen-xl px-4 md:py-20 py-40">
 

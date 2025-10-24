@@ -8,7 +8,7 @@ export default function AllSkill() {
 
   if (!skills || skills.length === 0) {
     return (
-      <div className="text-center py-30 ">
+      <div className="text-center md:py-60 py-70 ">
         <h2 className="text-2xl font-bold text-red-500">404 - No Skills Found</h2>
         <Link to="/" className="btn btn-secondary mt-4">Go to Home</Link>
       </div>

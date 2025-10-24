@@ -21,7 +21,7 @@ export default function Profile() {
     <div className="container mx-auto p-6 py-40 md:py-30 max-w-md">
       <h2 className="text-2xl font-bold mb-4">My Profile</h2>
       <div className="mb-4">
-        <img src={user?.photoURL || "https://via.placeholder.com/120"} alt="avatar" className="w-28 h-28 rounded-full" />
+        <img src={user?.photoURL || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHfd3PPulVSp4ZbuBFNkePoUR_fLJQe474Ag&s"} alt="avatar" className="w-28 h-28 rounded-full" />
         <p className="mt-2">{user?.email}</p>
       </div>
       <form onSubmit={handleUpdate} className="space-y-3 border-2 rounded-xl p-5 shadow-2xl">

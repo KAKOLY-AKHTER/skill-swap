@@ -48,6 +48,17 @@ const router = createBrowserRouter([
           <PrivateRoute>
         <Profile></Profile>
           </PrivateRoute>
+          
+        ),
+      },
+
+       {
+        path: "*",
+        element: (
+          <div className="text-center md:py-50 py-60">
+            <h2 className="text-2xl font-bold text-red-500">404 - Page Not Found</h2>
+            <a href="/" className="btn btn-secondary mt-4">Go to Home</a>
+          </div>
         ),
       },
     ],

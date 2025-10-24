@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { Link, useLoaderData, useParams } from "react-router";
 import toast from "react-hot-toast";
 
 export default function SkillDetails() {
   const { id } = useParams();
   const skills = useLoaderData();
-  const skill = skills.find((s) => String(s.skillId) === String(id));
-
+  // const skill = skills.find((s) => String(s.skillId) === String(id));
+  const skill = skills.find((s) => s.skillId === parseInt(id));
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
@@ -17,7 +17,14 @@ export default function SkillDetails() {
     setEmail("");
   };
 
-  if (!skill) return <div className="p-6">Skill not found</div>;
+ if (!skill) {
+  return (
+    <div className="text-center md:py-50 py-60">
+      <h2 className="text-2xl font-bold text-red-500">Skill Not Found</h2>
+      <Link to="/skills" className="btn btn-secondary mt-4">Back to All Skills</Link>
+    </div>
+  );
+}
 
   return (
     <div className="container mx-auto max-w-10/12 md:py-30 py-60">
@@ -27,7 +34,11 @@ export default function SkillDetails() {
           <h2 className="text-2xl font-bold mt-3 text-black">{skill.skillName}</h2>
           <p className="mt-2">{skill.description}</p>
           <p className="mt-2">Provider: {skill.providerName} ({skill.providerEmail})</p>
-          
+           <Link className="btn btn-secondary" to="/">
+        Back to Home
+      </Link>
+
+
         </div>
         <div>
           <h3 className="text-xl font-semibold ">Book Session</h3>

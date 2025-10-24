@@ -40,7 +40,7 @@ export default function Navbar() {
             <div> <GiTeacher className="text-gray-400" /></div>
             <div><NavLink to="/skills" className={({ isActive }) =>
               isActive ? "text-blue-600 font-bold underline text-sm" : "text-sm"
-            }>All Skill</NavLink></div>
+            }>All Skills</NavLink></div>
 
           </div>
 
