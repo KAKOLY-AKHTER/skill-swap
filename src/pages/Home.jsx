@@ -14,7 +14,7 @@ export default function Home() {
   const skills = useLoaderData()
   const popular = skills.slice(0, 8);
   return (
-    <div className="container mx-auto mt-10  max-w-screen-xl px-4 md:py-20 py-40">
+    <div className="container mx-auto mt-10  max-w-screen-xl px-4 md:py-20 py-50">
 
       <section className="mb-6 flex flex-col md:flex-row items-center justify-between bg-white p-6 rounded-lg shadow-md">
         <div className="w-full md:w-1/2 text-center md:text-left mt-6 md:mt-0">

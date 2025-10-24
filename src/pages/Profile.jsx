@@ -25,8 +25,8 @@ export default function Profile() {
         <p className="mt-2">{user?.email}</p>
       </div>
       <form onSubmit={handleUpdate} className="space-y-3 border-2 rounded-xl p-5 shadow-2xl">
-        <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" className="input input-bordered w-full" />
-        <input value={photo} onChange={(e) => setPhoto(e.target.value)} placeholder="Photo URL" className="input input-bordered w-full" />
+        <input required value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" className="input input-bordered w-full" />
+        <input required value={photo} onChange={(e) => setPhoto(e.target.value)} placeholder="Photo URL" className="input input-bordered w-full" />
         <button className="btn btn-primary">Update Profile</button>
       </form>
     </div>
