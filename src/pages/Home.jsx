@@ -7,12 +7,12 @@ import { Autoplay } from "swiper/modules";
 import { FaCalendarAlt, FaChalkboardTeacher } from "react-icons/fa";
 import { FaSearch, FaSignInAlt, FaCalendarCheck } from "react-icons/fa";
 import { FaStar, FaUserTie } from "react-icons/fa";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import SkillCard from "../components/SkillCard";
 
 export default function Home() {
   const skills = useLoaderData()
-  const popular = skills.slice(0, 15);
+  const popular = skills.slice(0, 6);
   return (
     <div className="container mx-auto mt-10  max-w-screen-xl px-4 md:py-20 py-40">
 
@@ -77,44 +77,6 @@ export default function Home() {
         </div>
 
 
-        {/* <div className="carousel w-full md:w-1/2 rounded-3xl">
-          <div id="slide1" className="carousel-item relative w-full">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAwtbySqpTwCqoHGi1VJWExp0CDchgjhtTDQ&s"
-              className="w-full" />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide4" className="btn btn-circle">❮</a>
-              <a href="#slide2" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide2" className="carousel-item relative w-full">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdA3ftV9SlAb4hnIJotqRTOvo-qaVviHXjJQ&s"
-              className="w-full" />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide1" className="btn btn-circle">❮</a>
-              <a href="#slide3" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" className="carousel-item relative w-full">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-hGmpUYbXTE55kXiKA6MrVouw28YkuZb39w&s"
-              className="w-full" />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" className="btn btn-circle">❮</a>
-              <a href="#slide4" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" className="carousel-item relative w-full">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzO_UCom91fofVCWrYXgawUErLERYmItunfpURjWsdGzG85suyk5MSk8t7IiSmg6WaVK8&usqp=CAU"
-              className="w-full" />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide3" className="btn btn-circle">❮</a>
-              <a href="#slide1" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-        </div> */}
       </section>
 
       <section>
@@ -124,6 +86,11 @@ export default function Home() {
             <SkillCard key={s.skillId} skill={s}></SkillCard>
           ))}
         </div>
+ <div className="text-center mt-6">
+    <Link to="/skills" className="btn btn-outline btn-secondary">Show All Skills</Link>
+  </div>
+
+
       </section>
 
 

@@ -4,6 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 import logo from "../assets/logo.png"
 import { FaHome } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
+import { GiTeacher } from "react-icons/gi";
 export default function Navbar() {
   const { user, logOut, signInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -33,6 +34,16 @@ export default function Navbar() {
             }
             >Home</NavLink></div>
           </div>
+          
+          <div className="flex items-center ">
+
+            <div> <GiTeacher className="text-gray-400" /></div>
+            <div><NavLink to="/skills" className={({ isActive }) =>
+              isActive ? "text-blue-600 font-bold underline text-sm" : "text-sm"
+            }>All Skill</NavLink></div>
+
+          </div>
+
           <div className="flex items-center ">
 
             <div>  <ImProfile className="text-gray-500" /> </div>

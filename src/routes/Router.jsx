@@ -9,6 +9,7 @@ import ForgotPassword from "../pages/ForgetPassword";
 import SkillDetails from "../pages/SkillDetails";
 import Profile from "../pages/Profile";
 import Loading from "../components/Loading";
+import AllSkill from "../pages/AllSkill";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,12 @@ const router = createBrowserRouter([
        }
     
       ,
+       {
+        path: "skills",
+        element: <AllSkill />,
+        loader: () => fetch("/skills.json"),
+        hydrateFallbackElement: <Loading />,
+      },
 
       { path: "login", element: <Login></Login>},
       { path: "signup", element: <SignUp></SignUp> },

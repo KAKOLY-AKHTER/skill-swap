@@ -27,6 +27,7 @@ export default function SkillDetails() {
           <h2 className="text-2xl font-bold mt-3 text-black">{skill.skillName}</h2>
           <p className="mt-2">{skill.description}</p>
           <p className="mt-2">Provider: {skill.providerName} ({skill.providerEmail})</p>
+          
         </div>
         <div>
           <h3 className="text-xl font-semibold ">Book Session</h3>
