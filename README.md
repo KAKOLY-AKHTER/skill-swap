@@ -9,8 +9,7 @@ Whether it’s guitar lessons, language exchange, coding help, or yoga training 
 
 ## 🚀 Live Demo
 🔗 **Live Link:** [https://endearing-maamoul-d68514.netlify.app](https://endearing-maamoul-d68514.netlify.app)  
-🔗 **GitHub Repository:** [https://github.com/programming-hero-web-course2/b12-a9-firesheild-KAKOLY-AKHTER.git](https://github.com/programming-hero-web-course2/b12-a9-firesheild-KAKOLY-AKHTER.git)
-
+🔗 **GitHub Repository:** https://github.com/KAKOLY-AKHTER/skill-swap.git
 ---
 
 ## 🧭 Project Overview
